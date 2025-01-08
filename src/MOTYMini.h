@@ -1,12 +1,13 @@
-#include <stdint.h>
 #include "Arduino.h"
-#define MOTYMini_ADDR                        0x77  
-#define MOTYMini_RESET                       0x1E
-#define MOTYMini_ADC_READ                    0x00
-#define MOTYMini_ADC_TEMP_CONV               0x48
-#define MOTYMini_PROM_READ                   0XA0
+#include <stdint.h>
+#define MOTYMini_ADDR 0x77
+#define MOTYMini_RESET 0x1E
+#define MOTYMini_ADC_READ 0x00
+#define MOTYMini_ADC_TEMP_CONV 0x48
+#define MOTYMini_PROM_READ 0XA0
 
-class MOTYMiniTempSensor {
+class MOTYMiniTempSensor
+{
 public:
   MOTYMiniTempSensor();
   void Init(int addr);
